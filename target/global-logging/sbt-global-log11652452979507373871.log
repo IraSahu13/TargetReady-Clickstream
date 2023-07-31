@@ -1,0 +1,86 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.3 (Oracle Corporation Java 11.0.18)
+[debug]       Load.loadUnit: plugins took 197.6942ms
+[debug]       Load.loadUnit: defsScala took 0.4192ms
+[debug] [Loading] Scanning directory C:\Users\Acer\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Acer\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 26.0146 ms
+[debug]           Load.resolveProject(global-plugins) took 109.3325ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Acer\.sbt\1.0\plugins, plugins: List(<none>))) took 196.8935ms
+[debug] [Loading] Done in C:\Users\Acer\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 234.8907ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.5861ms
+[debug]     Load.loadUnit(file:/C:/Users/Acer/.sbt/1.0/plugins/, ...) took 448.0491ms
+[debug]   Load.apply: load took 927.4661ms
+[debug]   Load.apply: resolveProjects took 10.3971ms
+[debug]   Load.apply: finalTransforms took 93.0811ms
+[debug]   Load.apply: config.delegates took 10.0116ms
+[debug]   Load.apply: Def.make(settings)... took 756.9154ms
+[debug]   Load.apply: structureIndex took 162.0867ms
+[debug]   Load.apply: mkStreams took 2.1849ms
+[info] loading global plugins from C:\Users\Acer\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[error] ## Exception when compiling 0 sources to C:\Users\Acer\.sbt\1.0\plugins\target\scala-2.12\sbt-1.0\classes
+[error] java.lang.OutOfMemoryError
+[error] java.base/jdk.internal.misc.Unsafe.allocateMemory(Unsafe.java:618)
+[error] java.base/java.nio.DirectByteBuffer.<init>(DirectByteBuffer.java:122)
+[error] java.base/java.nio.ByteBuffer.allocateDirect(ByteBuffer.java:318)
+[error] java.base/sun.nio.ch.Util.getTemporaryDirectBuffer(Util.java:242)
+[error] java.base/sun.nio.ch.IOUtil.read(IOUtil.java:242)
+[error] java.base/sun.nio.ch.FileChannelImpl.read(FileChannelImpl.java:223)
+[error] java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:65)
+[error] java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:107)
+[error] java.base/sun.nio.ch.ChannelInputStream.read(ChannelInputStream.java:101)
+[error] java.base/java.nio.file.Files.read(Files.java:3159)
+[error] java.base/java.nio.file.Files.readAllBytes(Files.java:3213)
+[error] sbt.internal.inc.HashUtil$.farmHash(HashUtil.scala:32)
+[error] sbt.internal.inc.FarmHash$.ofPath(Stamp.scala:89)
+[error] sbt.internal.inc.Stamper$.$anonfun$forFarmHashP$2(Stamp.scala:196)
+[error] sbt.internal.inc.Stamper$.tryStamp(Stamp.scala:188)
+[error] sbt.internal.inc.Stamper$.$anonfun$forFarmHashP$1(Stamp.scala:196)
+[error] sbt.internal.inc.caching.ClasspathCache$.genFileHash(ClasspathCache.scala:44)
+[error] sbt.internal.inc.caching.ClasspathCache$.fromCacheOrHash$1(ClasspathCache.scala:64)
+[error] sbt.internal.inc.caching.ClasspathCache$.$anonfun$hashClasspath$1(ClasspathCache.scala:71)
+[error] scala.collection.parallel.mutable.ParArray$Map.leaf(ParArray.scala:659)
+[error] scala.collection.parallel.Task.$anonfun$tryLeaf$1(Tasks.scala:53)
+[error] scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[error] scala.util.control.Breaks$$anon$1.catchBreak(Breaks.scala:67)
+[error] scala.collection.parallel.Task.tryLeaf(Tasks.scala:56)
+[error] scala.collection.parallel.Task.tryLeaf$(Tasks.scala:50)
+[error] scala.collection.parallel.mutable.ParArray$Map.tryLeaf(ParArray.scala:650)
+[error] scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:160)
+[error] scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal$(Tasks.scala:157)
+[error] scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:440)
+[error] scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute(Tasks.scala:150)
+[error] scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute$(Tasks.scala:149)
+[error] scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.compute(Tasks.scala:440)
+[error] java.base/java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)
+[error] java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+[error] java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+[error] java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+[error] java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+[error] java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+[error]            

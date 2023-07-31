@@ -1,0 +1,122 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.3 (Oracle Corporation Java 11.0.18)
+[debug]       Load.loadUnit: plugins took 164.1272ms
+[debug]       Load.loadUnit: defsScala took 0.6295ms
+[debug] [Loading] Scanning directory C:\Users\Acer\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Acer\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 40.306 ms
+[debug]           Load.resolveProject(global-plugins) took 122.1229ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Acer\.sbt\1.0\plugins, plugins: List(<none>))) took 240.9911ms
+[debug] [Loading] Done in C:\Users\Acer\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 310.5088ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.723ms
+[debug]     Load.loadUnit(file:/C:/Users/Acer/.sbt/1.0/plugins/, ...) took 544.4573ms
+[debug]   Load.apply: load took 862.5839ms
+[debug]   Load.apply: resolveProjects took 8.5457ms
+[debug]   Load.apply: finalTransforms took 80.3298ms
+[debug]   Load.apply: config.delegates took 10.4865ms
+[debug]   Load.apply: Def.make(settings)... took 625.5025ms
+[debug]   Load.apply: structureIndex took 174.9926ms
+[debug]   Load.apply: mkStreams took 2.4719ms
+[info] loading global plugins from C:\Users\Acer\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 5237.9471ms
+[debug]           Load.loadUnit: plugins took 32.6734ms
+[debug]           Load.loadUnit: defsScala took 0.0062ms
+[debug] [Loading] Scanning directory C:\Users\Acer\IdeaProjects\Kafkaprocon\project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Acer\IdeaProjects\Kafkaprocon\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.5531 ms
+[debug]               Load.resolveProject(kafkaprocon-build) took 1.4498ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id kafkaprocon-build, base: C:\Users\Acer\IdeaProjects\Kafkaprocon\project, plugins: List(<none>))) took 4.6353ms
+[debug] [Loading] Done in C:\Users\Acer\IdeaProjects\Kafkaprocon\project, returning: (kafkaprocon-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 6.9338ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.0197ms
+[debug]         Load.loadUnit(file:/C:/Users/Acer/IdeaProjects/Kafkaprocon/project/, ...) took 40.8867ms
+[debug]       Load.apply: load took 42.9062ms
+[debug]       Load.apply: resolveProjects took 0.1328ms
+[debug]       Load.apply: finalTransforms took 9.8076ms
+[debug]       Load.apply: config.delegates took 0.4298ms
+[debug]       Load.apply: Def.make(settings)... took 82.887ms
+[debug]       Load.apply: structureIndex took 35.4496ms
+[debug]       Load.apply: mkStreams took 0.0028ms
+[info] loading project definition from C:\Users\Acer\IdeaProjects\Kafkaprocon\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 1393.8238ms
+[debug]     Load.loadUnit: defsScala took 0.0045ms
+[debug] [Loading] Scanning directory C:\Users\Acer\IdeaProjects\Kafkaprocon
+[debug]       Load.loadUnit: mkEval took 9.0602ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 2.5634 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 3.8012ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\Acer\IdeaProjects\Kafkaprocon, plugins: List(<none>))) took 8.8061ms
+[debug] [Loading] Done in C:\Users\Acer\IdeaProjects\Kafkaprocon, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 546.8319ms
+[debug]     Load.loadUnit: cleanEvalClasses took 14.2696ms
+[debug]   Load.loadUnit(file:/C:/Users/Acer/IdeaProjects/Kafkaprocon/, ...) took 1955.8572ms
+[debug] Load.apply: load took 1958.1629ms
+[debug] Load.apply: resolveProjects took 0.1678ms
+[debug] Load.apply: finalTransforms took 11.124ms
+[debug] Load.apply: config.delegates took 0.4303ms
+[debug] Load.apply: Def.make(settings)... took 72.6564ms
+[debug] Load.apply: structureIndex took 23.5506ms
+[debug] Load.apply: mkStreams took 0.0034ms
+[info] set current project to Kafkaprocon (in build file:/C:/Users/Acer/IdeaProjects/Kafkaprocon/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:sbt-server-5b53fce81852447d2b1c
+[debug] Writing bsp connection file
+[info] started sbt server

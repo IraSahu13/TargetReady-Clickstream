@@ -1,0 +1,12 @@
+/.idea/
+/target/
+/project/target/
+/project/project/target/
+/lib/
+/data/output/
+/.DS_Store
+/src/.DS_Store
+/src/main/.DS_Store
+/src/main/scala/.DS_Store
+/src/main/scala/com/.DS_Store
+/src/main/scala/com/targetReady/.DS_Store

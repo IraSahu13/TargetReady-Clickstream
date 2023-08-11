@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kafkaprocon-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Kafkaprocon-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TargetReady-Clickstream.iml" filepath="$PROJECT_DIR$/.idea/modules/TargetReady-Clickstream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TargetReady-Team2-ClickstreamDataPipeline.iml" filepath="$PROJECT_DIR$/.idea/modules/TargetReady-Team2-ClickstreamDataPipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TargetReady-Team2-ClickstreamDataPipeline-build.iml" filepath="$PROJECT_DIR$/.idea/modules/TargetReady-Team2-ClickstreamDataPipeline-build.iml" />
     </modules>
   </component>
 </project>
